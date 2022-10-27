@@ -11,7 +11,7 @@ class App extends Component {
     componentWillUnmount() {
         //  Fantastic place to load data!
         axios.get('http://api.imgur.com/3/gallery/hot/viral/0')
-            .then(response => console.log(response));
+            .then(response => this.render());
      }
 
     render() {
